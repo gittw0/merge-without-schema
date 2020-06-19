@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4e1afb06-ea58-4be4-ac9e-e4fb87d27494" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayString" name="getArrayString" bindingOperationName="getArrayString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4e1afb06-ea58-4be4-ac9e-e4fb87d27494fileName">getArrayString</con:setting>
+  </con:settings>
+  <con:call id="8e113cd6-bc86-4534-9b95-0f38810061f6" name="getArrayString Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getArrayString>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:string>?</ser:string>\r
+         </ser:test>\r
+      </ser:getArrayString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayString"/>
+  </con:call>
+</con:operation>

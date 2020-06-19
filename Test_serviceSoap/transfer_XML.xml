@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b2cc3e9e-c44a-4dcf-822f-8615bd02796e" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_XML" name="transfer_XML" bindingOperationName="transfer_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b2cc3e9e-c44a-4dcf-822f-8615bd02796efileName">transfer_XML</con:setting>
+  </con:settings>
+  <con:call id="d5c9e31a-be5c-4de3-93c1-bb19ce8ef67a" name="transfer_XML Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:transfer_XML>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </ser:x>\r
+      </ser:transfer_XML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/transfer_XML"/>
+  </con:call>
+</con:operation>

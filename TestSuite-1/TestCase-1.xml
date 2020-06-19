@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d8cdf8a3-ee66-4d46-b9f8-b271cd2f0c7f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d8cdf8a3-ee66-4d46-b9f8-b271cd2f0c7ffileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="54c13290-3163-4709-a183-e2f461b3f8c7" name="SOAP Request">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="3c35c0a0-0a07-4cab-a2ee-3a02aaddadad">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka>
+         <!--Optional:-->
+         <ser:x>qwe</ser:x>
+         <!--Optional:-->
+         <ser:y>asd</ser:y>
+      </ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="assertionteststep" name="Assertion" id="09847523-0086-4cc8-b2a1-5d1ed83b781d">
+    <con:settings/>
+    <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:entry>
+        <con:id>e73c1102-6845-499f-8b4b-ab100bf7f6b6</con:id>
+        <con:isGroup>false</con:isGroup>
+        <con:sourceId>54c13290-3163-4709-a183-e2f461b3f8c7</con:sourceId>
+        <con:propertyName>Response</con:propertyName>
+        <con:assertion type="XPath Match" name="XPath Match" id="ba34a0cc-c3a8-4d15-a95f-44410f4eaec5">
+          <con:configuration>
+            <path>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</path>
+            <content>qwe asd</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+      </con:entry>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>54c13290-3163-4709-a183-e2f461b3f8c7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
