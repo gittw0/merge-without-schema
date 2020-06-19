@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="10328d1c-1dd6-4d34-9899-ac3f04e270ff" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_ushort" name="test_ushort" bindingOperationName="test_ushort" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="10328d1c-1dd6-4d34-9899-ac3f04e270ff" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_ushort" name="test_ushort" bindingOperationName="test_ushort" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="10328d1c-1dd6-4d34-9899-ac3f04e270fffileName">test_ushort</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:test_ushort/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_ushort"/>
   </con:call>
 </con:operation>

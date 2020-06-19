@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="544a042e-267f-414d-894b-2ae4a734a23f" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="544a042e-267f-414d-894b-2ae4a734a23f" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="544a042e-267f-414d-894b-2ae4a734a23ffileName">getArrayInt</con:setting>
   </con:settings>
@@ -19,6 +19,10 @@
       </ser:getArrayInt>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayIntRequest"/>
   </con:call>
 </con:operation>

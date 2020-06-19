@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="7c35701b-0e35-4d65-8da4-01d4c6f96adb" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_float" name="test_float" bindingOperationName="test_float" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="7c35701b-0e35-4d65-8da4-01d4c6f96adb" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_float" name="test_float" bindingOperationName="test_float" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7c35701b-0e35-4d65-8da4-01d4c6f96adbfileName">test_float</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:test_float/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_float"/>
   </con:call>
 </con:operation>

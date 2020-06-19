@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="dbd710d3-0098-46a0-b648-cb5625f37e2c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/massiv" name="massiv" bindingOperationName="massiv" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="dbd710d3-0098-46a0-b648-cb5625f37e2c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/massiv" name="massiv" bindingOperationName="massiv" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dbd710d3-0098-46a0-b648-cb5625f37e2cfileName">massiv</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:massiv/>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/massivRequest"/>
   </con:call>
 </con:operation>

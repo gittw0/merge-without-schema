@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="d19a85bb-b3de-4d6b-b4f6-507a17160d71" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_uint" name="test_uint" bindingOperationName="test_uint" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="d19a85bb-b3de-4d6b-b4f6-507a17160d71" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_uint" name="test_uint" bindingOperationName="test_uint" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d19a85bb-b3de-4d6b-b4f6-507a17160d71fileName">test_uint</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:test_uint/>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_uintRequest"/>
   </con:call>
 </con:operation>

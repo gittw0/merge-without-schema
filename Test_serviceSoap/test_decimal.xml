@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ae90680b-f3ec-4a1b-9b27-7d6e7e909181" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_decimal" name="test_decimal" bindingOperationName="test_decimal" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="ae90680b-f3ec-4a1b-9b27-7d6e7e909181" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_decimal" name="test_decimal" bindingOperationName="test_decimal" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ae90680b-f3ec-4a1b-9b27-7d6e7e909181fileName">test_decimal</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:test_decimal/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_decimal"/>
   </con:call>
 </con:operation>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="e076f79e-6442-4e31-9ad5-c0d4868d2a10" isOneWay="false" action="http://localhost/test_service/Service1.asmx/inheritance_class_super" name="inheritance_class_super" bindingOperationName="inheritance_class_super" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="e076f79e-6442-4e31-9ad5-c0d4868d2a10" isOneWay="false" action="http://localhost/test_service/Service1.asmx/inheritance_class_super" name="inheritance_class_super" bindingOperationName="inheritance_class_super" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e076f79e-6442-4e31-9ad5-c0d4868d2a10fileName">inheritance_class_super</con:setting>
   </con:settings>
@@ -55,6 +55,10 @@
       </ser:inheritance_class_super>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/inheritance_class_super"/>
   </con:call>
 </con:operation>

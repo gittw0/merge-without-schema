@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="4eb24177-51d4-4f15-9c9d-7917228b3108" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_double" name="test_double" bindingOperationName="test_double" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="4eb24177-51d4-4f15-9c9d-7917228b3108" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_double" name="test_double" bindingOperationName="test_double" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="4eb24177-51d4-4f15-9c9d-7917228b3108fileName">test_double</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:test_double/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_double"/>
   </con:call>
 </con:operation>

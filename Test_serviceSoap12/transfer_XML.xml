@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="8bf656de-c3c5-4131-a8cd-f853f9674d73" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_XML" name="transfer_XML" bindingOperationName="transfer_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="8bf656de-c3c5-4131-a8cd-f853f9674d73" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_XML" name="transfer_XML" bindingOperationName="transfer_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="8bf656de-c3c5-4131-a8cd-f853f9674d73fileName">transfer_XML</con:setting>
   </con:settings>
@@ -20,6 +20,10 @@
       </ser:transfer_XML>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_XMLRequest"/>
   </con:call>
 </con:operation>

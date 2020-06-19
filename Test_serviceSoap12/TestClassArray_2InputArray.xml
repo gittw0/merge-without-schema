@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="544af358-cea8-4537-9f6d-50a0f7b9ad28" isOneWay="false" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray" name="TestClassArray_2InputArray" bindingOperationName="TestClassArray_2InputArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="544af358-cea8-4537-9f6d-50a0f7b9ad28" isOneWay="false" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray" name="TestClassArray_2InputArray" bindingOperationName="TestClassArray_2InputArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="544af358-cea8-4537-9f6d-50a0f7b9ad28fileName">TestClassArray_2InputArray</con:setting>
   </con:settings>
@@ -46,6 +46,10 @@
       </ser:TestClassArray_2InputArray>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/TestClassArray_2InputArrayRequest"/>
   </con:call>
 </con:operation>

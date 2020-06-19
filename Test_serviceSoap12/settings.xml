@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:WsdlInterface" id="0a9eca2c-7488-4399-ac35-a190ef615958" wsaVersion="NONE" name="Test_serviceSoap12" type="wsdl" bindingName="{http://localhost/test_service/Service1.asmx}Test_serviceSoap12" soapVersion="1_2" anonymous="optional" definition="http://rapis02.aqa.com.ru/SOAP/Service1.asmx?WSDL" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:WsdlInterface" id="0a9eca2c-7488-4399-ac35-a190ef615958" wsaVersion="NONE" name="Test_serviceSoap12" type="wsdl" bindingName="{http://localhost/test_service/Service1.asmx}Test_serviceSoap12" soapVersion="1_2" anonymous="optional" definition="http://rapis02.aqa.com.ru/SOAP/Service1.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="0a9eca2c-7488-4399-ac35-a190ef615958fileName">Test_serviceSoap12</con:setting>
   </con:settings>

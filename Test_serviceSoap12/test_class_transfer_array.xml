@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="f363ea5c-fafa-4912-9064-03747a6b6dbf" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_transfer_array" name="test_class_transfer_array" bindingOperationName="test_class_transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="f363ea5c-fafa-4912-9064-03747a6b6dbf" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_transfer_array" name="test_class_transfer_array" bindingOperationName="test_class_transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="f363ea5c-fafa-4912-9064-03747a6b6dbffileName">test_class_transfer_array</con:setting>
   </con:settings>
@@ -19,6 +19,10 @@
       </ser:test_class_transfer_array>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_transfer_arrayRequest"/>
   </con:call>
 </con:operation>
