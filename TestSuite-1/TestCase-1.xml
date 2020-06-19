@@ -47,7 +47,7 @@
           <con:configuration>
             <path>declare namespace ns1='http://localhost/test_service/Service1.asmx';
 //ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</path>
-            <content>qwe asd</content>
+            <content>qwe 456</content>
             <allowWildcards>false</allowWildcards>
             <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
             <ignoreComments>false</ignoreComments>
